@@ -1,0 +1,157 @@
+
+
+
+.backButton{
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding: .5rem;
+    color: white;
+    font-size: 1.5rem;
+    border: .1rem solid white;
+    background-color: black;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    float: left;
+
+}
+
+body{
+    background-color: black;
+    padding: 10px;
+}
+
+.box{
+    border: .1rem solid white;
+}
+
+.button{
+    font-size: 20px;
+	border-radius: 8px;
+	text-align: center;
+    
+}
+.control{
+    color: white;
+    border: .1rem solid white;
+    text-align: center;
+    display: inline-flex;
+    font-size: 2.5rem;
+    padding: .5rem;
+    margin: 1rem;
+    flex-flow: column;
+    cursor: pointer;
+
+}
+
+.controlBox{
+    display: flex;
+    justify-content: center;
+}
+
+.creditBox{
+    text-align: center;
+    color: white;
+}
+
+.creditText{
+    font-size: 24;
+}
+
+.highScores{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.image{
+    margin: 1rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.menuButton{
+    margin: 5px;
+    padding: 25px;
+    width: 40%;
+    color: white;
+    font-size: 30px;
+    border: 2px solid lawngreen;
+    background-color: black;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-bottom: .9%;
+    margin-top:4%
+}
+
+#newControls{
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+}
+
+#particles{
+    text-align: center;
+}
+
+.red{
+    color: red;
+}
+
+#ships{
+    text-align: center;
+}
+
+.title{
+    margin: 1.5rem;
+    color: white;
+}
+
+.titleBox{
+    font-size: 32px;
+    text-align: center;
+}
+
+
+
+/* Featues */
+.backButton:hover{
+    background-color: white;
+    border: 2px solid white;
+	color: black;
+}
+
+.backButton:active {
+    background-color: white;
+    border: 2px solid white;
+    color: black;
+    transform: translateY(4px);
+  }
+
+
+.menuButton:hover{
+    background-color: white;
+    border: 2px solid white;
+	color: black;
+}
+
+.menuButton:active {
+    background-color: lawngreen;
+    border: 2px solid lawngreen;
+    color: black;
+    transform: translateY(4px);
+  }
+
+  /* Canvas */
+
+  #id-canvas
+{
+    border: 1px solid white;
+    left: 0;
+    top: 0;
+    background-color:rgb(0, 0, 0);
+    margin-left: 1%;
+    margin-top: 1%;
+}
