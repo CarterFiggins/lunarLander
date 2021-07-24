@@ -96,16 +96,11 @@ MyGame.setUp = ( function(){
         localStorage.setItem("highScores", JSON.stringify(highScores));
     }
 
-   
-
     let api = {
         get canvas() { return canvas; },
         generateLand: generateLand,
         reset: reset,
-        updateHighScores: updateHighScores,
-        
-
-        
+        updateHighScores: updateHighScores, 
     };
 
     return api;

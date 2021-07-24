@@ -14,7 +14,7 @@ MyGame.graphics = (function() {
     // --------------------------------------------------------------
     //
     //  Writen by Dean my Professor
-    // Draws a texture to the canvas with the following specification:
+    //  Draws a texture to the canvas with the following specification:
     //    image: Image
     //    center: {x: , y: }
     //    size: { width: , height: }

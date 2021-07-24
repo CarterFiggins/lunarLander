@@ -117,7 +117,7 @@ MyGame.model.Game = function (input, objects, graphics, lines){
                 waiting = 0;
                 highscore = Math.floor(highscore);
                 MyGame.setUp.updateHighScores(highscore);
-                window.location.href = "../Pages/highScores.html"
+                window.location.href = "../pages/highScores.html"
             }
             
         }
@@ -149,27 +149,10 @@ MyGame.model.Game = function (input, objects, graphics, lines){
     }
 
     function drawGameText(){
-        if(player.fuel <= 0){
-            graphics.drawText(`Fuel: ${Math.floor(player.fuel)} gal`, "Arial", 20, "red", 50, 50);
-        }
-        else{
-            graphics.drawText(`Fuel: ${Math.floor(player.fuel)} gal`, "Arial", 20, "green", 50, 50);
-        }
-        if(player.angle > 5 && player.angle < 350){
-            graphics.drawText(`Angle: ${player.angle}°`, "Arial", 20, "red", 50, 80);
-        }
-        else{
-            graphics.drawText(`Angle: ${player.angle}°`, "Arial", 20, "green", 50, 80);
-        }
-        if(player.speed > 2){
-            graphics.drawText(`Speed: ${player.speed} m/s`, "Arial", 20, "red", 50, 110 );
-        }
-        else{
-            graphics.drawText(`Speed: ${player.speed} m/s`, "Arial", 20, "green", 50, 110 );
-        }
-        if(startOfGame){
-            graphics.drawText(`${countDown}`, "Arial", 100, "white", window.innerWidth/2.4, window.innerHeight/2.5);
-        }
+        graphics.drawText(`Fuel: ${Math.floor(player.fuel)} gal`, "Arial", 20, player.fuel <=0 ? "red" : "green", 50, 50);
+        graphics.drawText(`Angle: ${player.angle}°`, "Arial", 20, player.angle > 5 && player.angle < 350 ? "red" : "green", 50, 80);
+        graphics.drawText(`Speed: ${player.speed} m/s`, "Arial", 20, player.speed > 2 ? "red" : "green", 50, 110 );
+        startOfGame && graphics.drawText(`${countDown}`, "Arial", 100, "white", window.innerWidth/2.4, window.innerHeight/2.5);    
     }  
 
     function checkCollision(){

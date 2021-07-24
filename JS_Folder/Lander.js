@@ -2,16 +2,17 @@
 // the plyaers functionality and info.
 MyGame.objects.Lander = function(spec){
     let rotation = spec.rotation ;
+    let momentum = spec.momentum;
+    let center = spec.center;
+    let radius = spec.radius;
+    let size = spec.size;
+
     let alive = true;
     let hasLanded = false;
-    let momentum = spec.momentum;
     let speed = Math.abs(momentum.x) + Math.abs(momentum.y);
     let fuel = 100.0;
     let gravity = .00002;
     let angle = Math.floor(Math.abs((rotation * Math.PI * 18.4 )%360));
-    let center = spec.center;
-    let radius = spec.radius;
-    let size = spec.size;
     let startRotation = rotation
     let startMomentum = {...momentum};
     let startSpeed = speed;

@@ -1,6 +1,4 @@
-
 // Changes the keys used to control Rocket ship
-
 
 let thurstKey = false;
 let rightKey = false;
@@ -29,7 +27,6 @@ function leftClick(){
     leftKey = true;
 
 }
-
 
 function updateKey(event){
     if(thurstKey){
